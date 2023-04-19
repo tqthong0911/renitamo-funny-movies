@@ -1,5 +1,5 @@
 {
-  "name": "csr-init-project-2023",
+  "name": "renitamo-funny-movies",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,11 +10,18 @@
     "@types/node": "^16.18.23",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
+    "bootstrap": "^5.2.3",
+    "clsx": "^1.2.1",
+    "firebase": "^9.20.0",
+    "jest": "^27.5.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.3.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +46,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@types/lodash.set": "^4.3.7",
+    "babel-jest": "^29.5.0"
   }
 }

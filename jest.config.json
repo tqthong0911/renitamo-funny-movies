@@ -1,0 +1,7 @@
+{
+  "preset": "react",
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx)$": "babel-jest"
+  }
+}

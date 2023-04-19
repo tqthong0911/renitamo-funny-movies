@@ -1,13 +1,78 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.loading {
+  position: relative;
+  pointer-events: none;
+  min-height: calc(68px);
+  user-select: none;
+}
+.loading:before {
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 48 48' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Eatom/other/loading/blue/large%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atom/other/loading/blue/large' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M24,44 C35.045695,44 44,35.045695 44,24 C44,12.954305 35.045695,4 24,4 C12.954305,4 4,12.954305 4,24 C4,35.045695 12.954305,44 24,44 Z' id='Oval' fill='%23000000' fill-rule='nonzero' opacity='0.2'%3E%3C/path%3E%3Cpath d='M40.9705627,40.9705627 L38.1421356,38.1421356 C41.8699543,34.4143169 44,29.3783233 44,24 C44,12.954305 35.045695,4 24,4 L24,0 C37.254834,0 48,10.745166 48,24 C48,30.4500936 45.4410906,36.5000349 40.9705627,40.9705627 Z' id='Oval' fill='%231F84F4' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  top: 50%;
+  left: 50%;
+  z-index: 2005;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-top: -2.4rem;
+  margin-left: -2.4rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: spin 1s linear infinite;
+}
+.loading:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2004;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.loading.loading-md:before {
+  width: 2rem;
+  height: 2rem;
+  margin-left: -1rem;
+  margin-top: -1rem;
+}
+.loading.loading-sm:before {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: -0.8rem;
+  margin-top: -0.8rem;
+}
+.loading.loading-xs:before {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: -0.6rem;
+  margin-top: -0.6rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
