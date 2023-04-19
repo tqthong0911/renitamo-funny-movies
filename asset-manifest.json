@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/renitamo-funny-movies/static/css/main.fdb5d3e5.css",
+    "main.js": "/renitamo-funny-movies/static/js/main.dec58102.js",
+    "static/js/787.2f0db0b8.chunk.js": "/renitamo-funny-movies/static/js/787.2f0db0b8.chunk.js",
+    "index.html": "/renitamo-funny-movies/index.html",
+    "main.fdb5d3e5.css.map": "/renitamo-funny-movies/static/css/main.fdb5d3e5.css.map",
+    "main.dec58102.js.map": "/renitamo-funny-movies/static/js/main.dec58102.js.map",
+    "787.2f0db0b8.chunk.js.map": "/renitamo-funny-movies/static/js/787.2f0db0b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdb5d3e5.css",
+    "static/js/main.dec58102.js"
+  ]
+}
